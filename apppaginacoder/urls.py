@@ -1,5 +1,5 @@
 from django.urls import path
-from apppaginacoder.views import inicio, profesor, estudiante, entregable, cursos, agregar_curso, lista_curso
+from apppaginacoder.views import inicio, profesor, estudiante, entregable, cursos, agregar_curso, lista_curso #Agregar views
 
 urlpatterns = [
     path('lista-curso', lista_curso),
@@ -10,3 +10,5 @@ urlpatterns = [
     path('entregable/' , entregable , name='Entregable'),
     path('cursos/' , cursos , name='Cursos'),
 ]
+#name= // Lectura
+#path( url, view, nombre )

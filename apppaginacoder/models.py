@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class profesor(models.Model):
     nombre = models.CharField(("Nombre"), max_length=50)
     apellido = models.CharField(("Apellido"), max_length=50)
@@ -24,3 +23,10 @@ class entregable(models.Model):
     nombre = models.CharField("Nombre", max_length=150)
     fecha_de_entrega = models.DateField()
     entregado = models.BooleanField()
+
+#Charfield=string
+#DateField=fecha
+#BooleanField=bool
+#IntegerField=int
+#EmailField=Email
+#FloatField=float
